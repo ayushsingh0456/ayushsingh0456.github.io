@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tendwell case study · Ayush Kumar Singh</title>
+  <meta name="description" content="A traceable, end-to-end business analysis case study for a fictional home-care operations SaaS: BRD, SRS, business rules, user stories, OpenAPI, test cases, UAT and post-incident reviews.">
+  <link rel="canonical" href="https://ayushsingh0456.github.io/case-studies/tendwell.html">
+  <meta name="theme-color" content="#f7f5f0" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0b0e13" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Tendwell case study · Ayush Kumar Singh">
+  <meta property="og:description" content="A traceable, end-to-end business analysis case study for a fictional home-care operations SaaS: BRD, SRS, business rules, user stories, OpenAPI, test cases, UAT and post-incident reviews.">
+  <meta property="og:url" content="https://ayushsingh0456.github.io/case-studies/tendwell.html">
+  <meta property="og:image" content="https://ayushsingh0456.github.io/assets/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <script>
+    (function () { try { var t = localStorage.getItem("theme"); if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t); } catch (e) {} })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <div class="backdrop" aria-hidden="true"></div>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.58.23 2.75.11 3.04.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.26 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16v12H4zM4 7l8 6 8-6"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></g></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-arrow-left" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M19 12H5M11 6l-6 6 6 6"/></symbol>
+    <symbol id="i-arrow-ur" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M7 17 17 7M8 7h9v9"/></symbol>
+    <symbol id="i-chev" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></g></symbol>
+    <symbol id="i-award" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="m8.5 14-1.5 8 5-3 5 3-1.5-8"/></g></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></g></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-6.1-7-11.5a7 7 0 0 1 14 0C19 14.9 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></g></symbol>
+  </svg>
+  <header class="cs-nav">
+    <div class="container">
+      <a class="brand" href="../index.html" aria-label="Ayush Kumar Singh, home"><span class="brand-mark">A</span><span>Ayush Kumar Singh</span></a>
+      <div class="cs-nav-right">
+        <a class="back" href="../index.html#work"><svg aria-hidden="true"><use href="#i-arrow-left"/></svg> All work</a>
+        <button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-label="Toggle theme"><svg class="i-sun"><use href="#i-sun"/></svg><svg class="i-moon"><use href="#i-moon"/></svg></button>
+      </div>
+    </div>
+    <div class="progress" aria-hidden="true"></div>
+  </header>
+
+  <main id="content">
+    <div class="container">
+      <section class="cs-hero">
+        <p class="eyebrow">Case study · Healthcare SaaS · Self-directed</p>
+        <h1>Tendwell: making care <em>provable</em>, from visit to invoice</h1>
+        <p class="cs-sub">An end-to-end business analysis for a multi-tenant platform that helps US home-care agencies schedule visits, verify them electronically, document medication and bill for verified care. Every requirement traces to an objective, rules, user stories, API operations and tests.</p>
+        <div class="cs-badges">
+          <a class="btn btn-primary" href="https://github.com/ayushsingh0456/tendwell-care-ops-ba-case-study" target="_blank" rel="noopener"><svg><use href="#i-github"/></svg> Browse the repository</a>
+          <a class="btn btn-ghost" href="https://github.com/ayushsingh0456/tendwell-care-ops-ba-case-study/blob/main/02-requirements/requirements-traceability-matrix.md" target="_blank" rel="noopener">Traceability matrix <svg><use href="#i-arrow-ur"/></svg></a>
+        </div>
+        <p class="disclaimer"><svg><use href="#i-lock"/></svg><span>Tendwell, its agencies, people and data are fictional. I built this case study to show, in public, the depth of work I do on confidential client projects. It is modeled on real healthcare operations problems but contains no client material.</span></p>
+        <dl class="meta-grid">
+          <div class="meta"><dt>My role</dt><dd>Business Analyst, sole author</dd></div>
+          <div class="meta"><dt>Scope</dt><dd>14 epics · 3 service lines · 8 user roles</dd></div>
+          <div class="meta"><dt>Standards</dt><dd>ISO/IEC/IEEE 29148, 29119-3, ISO 25010</dd></div>
+          <div class="meta"><dt>Tools</dt><dd>Markdown, Mermaid, OpenAPI 3.1, Postman, Python</dd></div>
+        </dl>
+      </section>
+
+      <div class="cs-layout">
+        <nav class="toc" aria-label="On this page">
+          <p>On this page</p>
+          <ol>
+            <li><a href="#problem">The problem</a></li>
+            <li><a href="#approach">Approach</a></li>
+            <li><a href="#decisions">Key decisions</a></li>
+            <li><a href="#traceability">Traceability</a></li>
+            <li><a href="#incidents">Incidents to requirements</a></li>
+            <li><a href="#artifacts">Artifacts</a></li>
+            <li><a href="#reflection">Reflection</a></li>
+          </ol>
+        </nav>
+
+        <article class="prose">
+          <section id="problem">
+            <h2><span class="num">01</span>The problem</h2>
+            <p>Home-care agencies must prove, visit by visit, that care was delivered: who attended, when, where, for how long, and what was administered. Payroll then has to pay that time correctly and billing has to charge it against the right authorization. In the fictional pilot agencies, this chain ran on phone calls, paper timesheets and MAR binders.</p>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>Objective</th><th>Baseline</th><th>Target</th></tr></thead>
+                <tbody>
+                  <tr><td>Visits with complete EVV data</td><td>81%</td><td class="up">97% or more</td></tr>
+                  <tr><td>Payroll preparation time per pay period</td><td>14 h</td><td class="up">3 h or less</td></tr>
+                  <tr><td>Undocumented medication doses</td><td>4.6%</td><td class="up">0.5% or less</td></tr>
+                  <tr><td>Days to issue monthly invoices</td><td>9</td><td class="up">2 business days</td></tr>
+                  <tr><td>Billing denials from authorization overruns</td><td>6.1%</td><td class="up">1% or less</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p>The hard part is not the screens. It is the rules: care must never be blocked by software, clinical records must never silently disappear, overtime and 15-minute billing units must be exact, and protected health information must stay out of every channel that cannot protect it.</p>
+          </section>
+
+          <section id="approach">
+            <h2><span class="num">02</span>Approach</h2>
+            <p>I worked through the same lifecycle I use on client projects, and wrote each artifact to the standard a real team would review it against.</p>
+            <div class="phase-grid">
+              <div class="phase"><span class="n">01 · DISCOVER</span><h4>Charter and personas</h4><p>Stakeholder register, RACI, five personas, AS-IS and TO-BE maps with 12 quantified pain points.</p></div>
+              <div class="phase"><span class="n">02 · DEFINE</span><h4>BRD and SRS</h4><p>Six objectives, 93 functional requirements, 58 business rules with decision tables, 29 measurable NFRs.</p></div>
+              <div class="phase"><span class="n">03 · DESIGN</span><h4>Architecture and data</h4><p>C4 views, sequence and state diagrams, ERD, data dictionary and six annotated wireframes.</p></div>
+              <div class="phase"><span class="n">04 · DELIVER</span><h4>Stories and plans</h4><p>54 INVEST stories, 294 Gherkin criteria, a Jira import file, sprint plan, CR and RAID logs.</p></div>
+              <div class="phase"><span class="n">05 · VALIDATE</span><h4>Testing and UAT</h4><p>Test strategy, 118 test cases, 12 UAT scenarios, synthetic test data and a Postman collection.</p></div>
+              <div class="phase"><span class="n">06 · OPERATE</span><h4>Incident reviews</h4><p>Incident process and three blameless reviews, each producing a change request and new tests.</p></div>
+            </div>
+            <div class="callout"><span class="label">Worked example</span><p>A caregiver works 43 hours in a week that includes Labor Day. The business rules produce 6.0 holiday hours, 31.5 regular, 2.5 paid travel and 3.0 overtime, with no premium stacking: $926.25 in wages plus $32.34 mileage. The same numbers appear in the SRS, the story's acceptance criteria, the test data and the API example, because each one is generated or checked against a single source.</p></div>
+          </section>
+
+          <section id="decisions">
+            <h2><span class="num">03</span>Key decisions</h2>
+            <p>These are the calls I would expect to defend in a design review.</p>
+            <div class="decision"><span class="ico"><svg><use href="#i-pin"/></svg></span><div><h4>EVV flags, it never blocks</h4><p>A caregiver outside the 150 m geofence can still clock in. The visit raises a reason-coded exception for review, because refusing the punch would mean undocumented care.</p></div></div>
+            <div class="decision"><span class="ico"><svg><use href="#i-lock"/></svg></span><div><h4>Missed doses stay missed</h4><p>A pilot agency asked to auto-cancel undocumented doses at midnight. I recommended rejecting it: doses now escalate to the nurse and stay visible as "Missed - undocumented", which keeps the clinical record honest.</p></div></div>
+            <div class="decision"><span class="ico"><svg><use href="#i-arrow"/></svg></span><div><h4>Export payroll, don't run it</h4><p>In-app tax processing was deferred. Tendwell computes hours and pay lines exactly and hands a mapped CSV to the agency's payroll provider, which cut scope and risk.</p></div></div>
+            <div class="decision"><span class="ico"><svg><use href="#i-award"/></svg></span><div><h4>Open issues are written down</h4><p>The SRS keeps 17 open issues, each with the behavior the release implements today, an owner and a target date, so nothing ambiguous is left implicit.</p></div></div>
+          </section>
+
+          <section id="traceability">
+            <h2><span class="num">04</span>Traceability</h2>
+            <p>The traceability matrix is generated from the requirements register, the story files, the API specification and the test-case file. A broken link shows up as a gap, not as a stale spreadsheet cell.</p>
+            <div class="trace" role="img" aria-label="Trace chain from objective OBJ-01 to requirement FR-EVV-03, rule BR-021, story US-025, API operation and test case TC-EVV-004">
+              <div class="trace-row">
+                <div class="trace-node"><span class="k">OBJECTIVE</span><b>OBJ-01 EVV completeness</b></div>
+                <span class="trace-arrow"><svg><use href="#i-arrow"/></svg></span>
+                <div class="trace-node"><span class="k">REQUIREMENT</span><b>FR-EVV-03 Location mismatch</b></div>
+                <span class="trace-arrow"><svg><use href="#i-arrow"/></svg></span>
+                <div class="trace-node"><span class="k">RULE</span><b>BR-021 150 m geofence</b></div>
+                <span class="trace-arrow"><svg><use href="#i-arrow"/></svg></span>
+                <div class="trace-node"><span class="k">STORY</span><b>US-025 Clock in at home</b></div>
+                <span class="trace-arrow"><svg><use href="#i-arrow"/></svg></span>
+                <div class="trace-node"><span class="k">API</span><b>POST /visits/{id}/clock-in</b></div>
+                <span class="trace-arrow"><svg><use href="#i-arrow"/></svg></span>
+                <div class="trace-node"><span class="k">TEST</span><b>TC-EVV-004 boundary 149/150/151 m</b></div>
+              </div>
+              <p class="trace-caption">Coverage: every one of the 93 requirements and 58 business rules has at least one test case. 91 requirements map to an API operation, and the rest are scheduled jobs or notifications.</p>
+            </div>
+          </section>
+
+          <section id="incidents">
+            <h2><span class="num">05</span>Incidents to requirements</h2>
+            <p>Production incidents are where requirements prove themselves. I wrote each review blamelessly, with a timeline, 5 Whys and corrective actions, and closed the loop with a change request.</p>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>Incident</th><th>What happened</th><th>Requirement change</th></tr></thead>
+                <tbody>
+                  <tr><td><b>SEV-2</b> duplicate invoices</td><td>Two scheduler workers ran the same billing job during a deployment. 214 duplicate drafts, 6 clients paid twice.</td><td>CR-005: idempotency key enforced by a database constraint, plus a pre-issue duplicate check</td></tr>
+                  <tr><td><b>SEV-2</b> false location exceptions</td><td>iOS approximate location produced 1,180 false "location mismatch" exceptions in 3 days.</td><td>CR-004: a separate "Low GPS accuracy" exception and a precise-location prompt</td></tr>
+                  <tr><td><b>SEV-1</b> privacy</td><td>An escalation email reached a deactivated user, because recipients were cached when the ladder was configured.</td><td>CR-006: recipients resolved at send time, and no PHI in email bodies</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <section id="artifacts">
+            <h2><span class="num">06</span>Artifacts</h2>
+            <p>Open any of these on GitHub. The diagrams render in the browser.</p>
+            <div class="artifact-grid">
+              <a class="artifact" href="https://github.com/ayushsingh0456/tendwell-care-ops-ba-case-study/blob/main/02-requirements/BRD.md" target="_blank" rel="noopener"><span class="ico">BRD</span><span><b>Business requirements</b><span>Objectives, scope, business needs and sign-off</span></span></a>
+              <a class="artifact" href="https://github.com/ayushsingh0456/tendwell-care-ops-ba-case-study/blob/main/02-requirements/SRS.md" target="_blank" rel="noopener"><span class="ico">SRS</span><span><b>Software requirements</b><span>93 FRs, field specs, permission matrix</span></span></a>
+              <a class="artifact" href="https://github.com/ayushsingh0456/tendwell-care-ops-ba-case-study/blob/main/02-requirements/business-rules.md" target="_blank" rel="noopener"><span class="ico">BR</span><span><b>Business rules</b><span>58 rules and 7 decision tables</span></span></a>
+              <a class="artifact" href="https://github.com/ayushsingh0456/tendwell-care-ops-ba-case-study/blob/main/05-delivery/user-stories/EP-06-evv.md" target="_blank" rel="noopener"><span class="ico">US</span><span><b>User stories</b><span>INVEST stories with boundary-value Gherkin</span></span></a>
+              <a class="artifact" href="https://github.com/ayushsingh0456/tendwell-care-ops-ba-case-study/blob/main/03-design/diagrams/sequence-diagrams.md" target="_blank" rel="noopener"><span class="ico">SEQ</span><span><b>Sequence and state diagrams</b><span>Clock-in, billing run, missed-dose escalation</span></span></a>
+              <a class="artifact" href="https://github.com/ayushsingh0456/tendwell-care-ops-ba-case-study/blob/main/03-design/wireframes/README.md" target="_blank" rel="noopener"><span class="ico">UI</span><span><b>Wireframes</b><span>Six annotated screens, mobile and web</span></span></a>
+              <a class="artifact" href="https://github.com/ayushsingh0456/tendwell-care-ops-ba-case-study/blob/main/04-api/openapi.yaml" target="_blank" rel="noopener"><span class="ico">API</span><span><b>OpenAPI 3.1 spec</b><span>105 operations with an error-code catalog</span></span></a>
+              <a class="artifact" href="https://github.com/ayushsingh0456/tendwell-care-ops-ba-case-study/blob/main/06-quality/test-cases.md" target="_blank" rel="noopener"><span class="ico">QA</span><span><b>Test cases and UAT</b><span>118 cases, 12 UAT scenarios, test data</span></span></a>
+              <a class="artifact" href="https://github.com/ayushsingh0456/tendwell-care-ops-ba-case-study/blob/main/05-delivery/change-request-log.md" target="_blank" rel="noopener"><span class="ico">CR</span><span><b>Change requests</b><span>Impact analysis, including two rejected</span></span></a>
+              <a class="artifact" href="https://github.com/ayushsingh0456/tendwell-care-ops-ba-case-study/blob/main/07-operations/incidents/INC-2026-007-duplicate-client-invoices.md" target="_blank" rel="noopener"><span class="ico">INC</span><span><b>Post-incident review</b><span>Timeline, 5 Whys and CAPA</span></span></a>
+            </div>
+          </section>
+
+          <section id="reflection">
+            <h2><span class="num">07</span>Reflection</h2>
+            <div class="outcomes">
+              <div class="outcome"><b>100+</b><span>files, all cross-checked: IDs, links, diagrams and calculations</span></div>
+              <div class="outcome"><b>0</b><span>requirements or business rules without a test case</span></div>
+              <div class="outcome"><b>1</b><span>source of truth that generates the RTM, Jira import and SRS tables</span></div>
+            </div>
+            <p><strong>What worked.</strong> Treating the requirements register as data, not prose. Once IDs, numbers and examples lived in one place, every downstream artifact could be generated or checked, and consistency stopped depending on memory.</p>
+            <p><strong>What I'd do next.</strong> Run a usability test of the clock-in flow with real caregivers, add state-specific EVV aggregator formats, and replace the illustrative cost model with real agency data.</p>
+            <p>Want to see how this maps to live client work? The <a class="inline" href="healthcare-ops-rebuild.html">care-agency platform rebuild</a> covers a real project in the same domain.</p>
+          </section>
+        </article>
+      </div>
+
+      <a class="next-case" href="healthcare-ops-rebuild.html">
+        <div><span class="k">Next case study</span><b>Rebuilding a care-agency operations platform</b></div>
+        <span class="arrow-c"><svg><use href="#i-arrow"/></svg></span>
+      </a>
+    </div>
+
+  </main>
+
+  <div class="container">
+    <footer class="site-foot">
+      <span>© <span data-year>2026</span> Ayush Kumar Singh</span>
+      <span><a href="https://www.linkedin.com/in/ayush-singh-914495189/" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://github.com/ayushsingh0456" target="_blank" rel="noopener">GitHub</a> · <a href="mailto:ayushsingh.06533@gmail.com">Email</a></span>
+    </footer>
+  </div>
+  <div class="toast" role="status" aria-live="polite"></div>
+  <script src="../js/main.js" defer></script>
+</body>
+</html>

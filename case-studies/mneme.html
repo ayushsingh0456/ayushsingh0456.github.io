@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mneme case study · Ayush Kumar Singh</title>
+  <meta name="description" content="Mneme: product concept and clickable prototype for an AI operational workspace that keeps meetings, daily logs, decisions and client threads in one searchable memory.">
+  <link rel="canonical" href="https://ayushsingh0456.github.io/case-studies/mneme.html">
+  <meta name="theme-color" content="#f7f5f0" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0b0e13" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Mneme case study · Ayush Kumar Singh">
+  <meta property="og:description" content="Mneme: product concept and clickable prototype for an AI operational workspace that keeps meetings, daily logs, decisions and client threads in one searchable memory.">
+  <meta property="og:url" content="https://ayushsingh0456.github.io/case-studies/mneme.html">
+  <meta property="og:image" content="https://ayushsingh0456.github.io/assets/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <script>
+    (function () { try { var t = localStorage.getItem("theme"); if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t); } catch (e) {} })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <div class="backdrop" aria-hidden="true"></div>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.58.23 2.75.11 3.04.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.26 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16v12H4zM4 7l8 6 8-6"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></g></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-arrow-left" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M19 12H5M11 6l-6 6 6 6"/></symbol>
+    <symbol id="i-arrow-ur" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M7 17 17 7M8 7h9v9"/></symbol>
+    <symbol id="i-chev" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></g></symbol>
+    <symbol id="i-award" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="m8.5 14-1.5 8 5-3 5 3-1.5-8"/></g></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></g></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-6.1-7-11.5a7 7 0 0 1 14 0C19 14.9 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></g></symbol>
+  </svg>
+  <header class="cs-nav">
+    <div class="container">
+      <a class="brand" href="../index.html" aria-label="Ayush Kumar Singh, home"><span class="brand-mark">A</span><span>Ayush Kumar Singh</span></a>
+      <div class="cs-nav-right">
+        <a class="back" href="../index.html#work"><svg aria-hidden="true"><use href="#i-arrow-left"/></svg> All work</a>
+        <button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-label="Toggle theme"><svg class="i-sun"><use href="#i-sun"/></svg><svg class="i-moon"><use href="#i-moon"/></svg></button>
+      </div>
+    </div>
+    <div class="progress" aria-hidden="true"></div>
+  </header>
+
+  <main id="content">
+    <div class="container">
+      <section class="cs-hero">
+        <p class="eyebrow">Case study · Product concept · Clickable prototype</p>
+        <h1>Mneme: one searchable <em>memory</em> for project delivery</h1>
+        <p class="cs-sub">On services projects, context leaks into meeting recordings, chat threads, emails and people's heads. Mneme is my concept for an AI operational workspace that captures meetings, daily logs, decisions and client threads, links them to projects, and answers "what happened and why?" with sources.</p>
+        <div class="cs-badges">
+          <a class="btn btn-primary" href="https://github.com/ayushsingh0456/context-hub" target="_blank" rel="noopener"><svg><use href="#i-github"/></svg> View the prototype code</a>
+          <span class="status status-concept">Prototype, mock data</span>
+        </div>
+        <dl class="meta-grid">
+          <div class="meta"><dt>My role</dt><dd>Product concept, requirements, UX flows and prototype</dd></div>
+          <div class="meta"><dt>Users</dt><dd>BAs and PMs, delivery leads, team members</dd></div>
+          <div class="meta"><dt>Built with</dt><dd>React, TypeScript, TanStack Start, shadcn/ui</dd></div>
+          <div class="meta"><dt>Method</dt><dd>AI-assisted prototyping from written specs</dd></div>
+        </dl>
+      </section>
+
+      <div class="cs-layout">
+        <nav class="toc" aria-label="On this page">
+          <p>On this page</p>
+          <ol>
+            <li><a href="#problem">The problem</a></li>
+            <li><a href="#users">Users and jobs</a></li>
+            <li><a href="#product">The product</a></li>
+            <li><a href="#principles">Design principles</a></li>
+            <li><a href="#build">How I built it</a></li>
+            <li><a href="#next">What's next</a></li>
+          </ol>
+        </nav>
+
+        <article class="prose">
+          <section id="problem">
+            <h2><span class="num">01</span>The problem</h2>
+            <p>As a BA, I own requirements, decisions and change control, but the evidence behind them is scattered. A decision is made in a call, confirmed in a WhatsApp thread, and half-remembered in a spreadsheet. When a client asks why something was built a certain way, or a new team member joins mid-sprint, someone has to rebuild the story by hand.</p>
+            <div class="callout"><span class="label">Problem statement</span><p>Delivery teams lose time and trust because project context is fragmented across tools, and nothing connects a decision to the conversation, meeting or log that produced it.</p></div>
+          </section>
+
+          <section id="users">
+            <h2><span class="num">02</span>Users and jobs to be done</h2>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>User</th><th>Job to be done</th></tr></thead>
+                <tbody>
+                  <tr><td>Business Analyst or Project Manager</td><td>Track decisions, blockers and change requests across projects, and answer "what happened and why" in minutes.</td></tr>
+                  <tr><td>Delivery lead</td><td>See project health and what needs attention today without chasing updates.</td></tr>
+                  <tr><td>Team member</td><td>Log progress, blockers and tomorrow's plan in under 30 seconds.</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <section id="product">
+            <h2><span class="num">03</span>The product</h2>
+            <p>I prototyped 12 connected screens around a single project record.</p>
+            <div class="phase-grid">
+              <div class="phase"><span class="n">TODAY</span><h4>Needs attention</h4><p>Live meetings, pending logs, tasks, AI insights and the latest signals.</p></div>
+              <div class="phase"><span class="n">PROJECTS</span><h4>Project health</h4><p>Team, blockers, pending logs, and tabs for meetings, logs, communications, files and timeline.</p></div>
+              <div class="phase"><span class="n">MEETINGS</span><h4>From call to record</h4><p>Transcript upload, minutes, decisions, action items and an AI summary.</p></div>
+              <div class="phase"><span class="n">DAILY LOGS</span><h4>30-second capture</h4><p>Done, blockers and tomorrow, with auto-saved drafts.</p></div>
+              <div class="phase"><span class="n">COMMUNICATIONS</span><h4>Threads that matter</h4><p>Slack, Teams, WhatsApp and email threads, linked to a project.</p></div>
+              <div class="phase"><span class="n">ASSISTANT</span><h4>Answers with sources</h4><p>Questions answered from meetings, logs and threads, with citations.</p></div>
+            </div>
+            <p>A <strong>timeline</strong> puts every meeting, log, decision, blocker and upload for a project into one searchable history. <strong>Analytics</strong> show activity and project health over time.</p>
+          </section>
+
+          <section id="principles">
+            <h2><span class="num">04</span>Design principles</h2>
+            <div class="decision"><span class="ico"><svg><use href="#i-arrow"/></svg></span><div><h4>Capture must be cheap</h4><p>If a daily log takes more than 30 seconds, people stop writing them. The form has three short fields and keyboard shortcuts.</p></div></div>
+            <div class="decision"><span class="ico"><svg><use href="#i-pin"/></svg></span><div><h4>Decisions are first-class records</h4><p>They are not lines buried in meeting notes. Each one is linked to its source, so it can be searched and traced later.</p></div></div>
+            <div class="decision"><span class="ico"><svg><use href="#i-lock"/></svg></span><div><h4>Every answer cites its sources</h4><p>The assistant shows which meetings, logs and threads it used, so users verify rather than trust blindly.</p></div></div>
+          </section>
+
+          <section id="build">
+            <h2><span class="num">05</span>How I built it</h2>
+            <p>I wrote the concept, user jobs and screen requirements first, then used AI-assisted prototyping to turn them into a working React interface. One consistent mock dataset feeds every screen, so links between projects, meetings and logs behave like the real product would. The result is something stakeholders can click through, which is a far better conversation starter than a slide.</p>
+            <ul class="tags"><li class="tag">React</li><li class="tag">TypeScript</li><li class="tag">TanStack Start</li><li class="tag">Tailwind CSS</li><li class="tag">shadcn/ui</li><li class="tag">Cloudflare Workers</li></ul>
+          </section>
+
+          <section id="next">
+            <h2><span class="num">06</span>What's next</h2>
+            <ul class="list">
+              <li>Validate the problem with interviews with BAs, PMs and delivery leads before building a backend.</li>
+              <li>Add authentication, workspaces and a data model for projects, meetings, logs, decisions and messages.</li>
+              <li>Add Slack, Teams and email integrations, and transcript ingestion with retrieval-augmented search for the assistant.</li>
+              <li>Add role-based access and audit logging, because project memory often holds client-confidential information.</li>
+            </ul>
+          </section>
+        </article>
+      </div>
+
+      <a class="next-case" href="tendwell.html">
+        <div><span class="k">Next case study</span><b>Tendwell: a traceable BA case study</b></div>
+        <span class="arrow-c"><svg><use href="#i-arrow"/></svg></span>
+      </a>
+    </div>
+
+  </main>
+
+  <div class="container">
+    <footer class="site-foot">
+      <span>© <span data-year>2026</span> Ayush Kumar Singh</span>
+      <span><a href="https://www.linkedin.com/in/ayush-singh-914495189/" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://github.com/ayushsingh0456" target="_blank" rel="noopener">GitHub</a> · <a href="mailto:ayushsingh.06533@gmail.com">Email</a></span>
+    </footer>
+  </div>
+  <div class="toast" role="status" aria-live="polite"></div>
+  <script src="../js/main.js" defer></script>
+</body>
+</html>

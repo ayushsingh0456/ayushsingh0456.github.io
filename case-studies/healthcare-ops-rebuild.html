@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Care-agency platform rebuild · Ayush Kumar Singh</title>
+  <meta name="description" content="How I took over a legacy US home-care operations platform with no original team, won approval for a rebuild, specified 60+ modules and delivered 1.5x the original scope ahead of the deadline.">
+  <link rel="canonical" href="https://ayushsingh0456.github.io/case-studies/healthcare-ops-rebuild.html">
+  <meta name="theme-color" content="#f7f5f0" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0b0e13" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Care-agency platform rebuild · Ayush Kumar Singh">
+  <meta property="og:description" content="How I took over a legacy US home-care operations platform with no original team, won approval for a rebuild, specified 60+ modules and delivered 1.5x the original scope ahead of the deadline.">
+  <meta property="og:url" content="https://ayushsingh0456.github.io/case-studies/healthcare-ops-rebuild.html">
+  <meta property="og:image" content="https://ayushsingh0456.github.io/assets/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <script>
+    (function () { try { var t = localStorage.getItem("theme"); if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t); } catch (e) {} })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <div class="backdrop" aria-hidden="true"></div>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.58.23 2.75.11 3.04.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.26 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16v12H4zM4 7l8 6 8-6"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></g></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-arrow-left" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M19 12H5M11 6l-6 6 6 6"/></symbol>
+    <symbol id="i-arrow-ur" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M7 17 17 7M8 7h9v9"/></symbol>
+    <symbol id="i-chev" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></g></symbol>
+    <symbol id="i-award" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="m8.5 14-1.5 8 5-3 5 3-1.5-8"/></g></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></g></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-6.1-7-11.5a7 7 0 0 1 14 0C19 14.9 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></g></symbol>
+  </svg>
+  <header class="cs-nav">
+    <div class="container">
+      <a class="brand" href="../index.html" aria-label="Ayush Kumar Singh, home"><span class="brand-mark">A</span><span>Ayush Kumar Singh</span></a>
+      <div class="cs-nav-right">
+        <a class="back" href="../index.html#work"><svg aria-hidden="true"><use href="#i-arrow-left"/></svg> All work</a>
+        <button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-label="Toggle theme"><svg class="i-sun"><use href="#i-sun"/></svg><svg class="i-moon"><use href="#i-moon"/></svg></button>
+      </div>
+    </div>
+    <div class="progress" aria-hidden="true"></div>
+  </header>
+
+  <main id="content">
+    <div class="container">
+      <section class="cs-hero">
+        <p class="eyebrow">Case study · US healthcare operations SaaS · Client work</p>
+        <h1>Rebuilding a care-agency platform with <em>no original team</em></h1>
+        <p class="cs-sub">US care agencies run their day on this platform: scheduling, staff time, medications, payroll and billing. When it reached us, it was 3 to 4 years old and none of its original developers were left. I won approval for a full rebuild, specified it, and coordinated delivery to production.</p>
+        <div class="cs-badges">
+          <span class="status status-live">Live in production</span>
+          <span class="tag tag-neutral">Web + mobile</span>
+          <span class="tag tag-neutral">HIPAA / BAA</span>
+          <span class="tag tag-neutral">Legacy rebuild</span>
+        </div>
+        <p class="disclaimer"><svg><use href="#i-lock"/></svg><span>This is confidential client work. The client name, screens and documents are withheld, and the figures below are my own delivery outcomes. For a public example of the same depth of documentation, see the <a class="inline" href="tendwell.html" style="color:inherit;text-decoration:underline">Tendwell case study</a>.</span></p>
+        <dl class="meta-grid">
+          <div class="meta"><dt>My role</dt><dd>Business Analyst and delivery coordinator</dd></div>
+          <div class="meta"><dt>Team</dt><dd>Developers, QA and DevOps</dd></div>
+          <div class="meta"><dt>Platform</dt><dd>Multi-tenant web portal and mobile app</dd></div>
+          <div class="meta"><dt>Tools</dt><dd>Jira, Postman, Figma + Claude MCP, Google Stitch</dd></div>
+        </dl>
+      </section>
+
+      <div class="cs-layout">
+        <nav class="toc" aria-label="On this page">
+          <p>On this page</p>
+          <ol>
+            <li><a href="#situation">Situation</a></li>
+            <li><a href="#approach">What I did</a></li>
+            <li><a href="#decisions">Key decisions</a></li>
+            <li><a href="#outcomes">Outcomes</a></li>
+            <li><a href="#learned">What I learned</a></li>
+          </ol>
+        </nav>
+
+        <article class="prose">
+          <section id="situation">
+            <h2><span class="num">01</span>Situation</h2>
+            <p>Care agencies must show, for every client and every visit, that care happened: who attended, when, what was administered and what was observed. They also have to pay staff correctly for that time and bill for it under the right reimbursement model. The platform tied all of this into one record chain: <strong>schedule, then clock-in, then medication and notes, then pay, then bill</strong>.</p>
+            <p>The existing build worked, but nobody who wrote it was still around, and there was no reliable documentation of how it behaved. Every change was a risk, and the client wanted to grow the product rather than keep patching it.</p>
+            <div class="callout"><span class="label">The real question</span><p>Before anyone could estimate a rebuild, someone had to answer a simpler question: what does the system actually do today, for each role and each module?</p></div>
+          </section>
+
+          <section id="approach">
+            <h2><span class="num">02</span>What I did</h2>
+            <div class="phase-grid">
+              <div class="phase"><span class="n">01 · ASSESS</span><h4>Understand the legacy</h4><p>Walked the existing platform role by role and module by module, and wrote down how it actually behaved.</p></div>
+              <div class="phase"><span class="n">02 · DECIDE</span><h4>Make the case</h4><p>Laid out the options and risks for the client, and won approval for a full rebuild instead of more patching.</p></div>
+              <div class="phase"><span class="n">03 · SPECIFY</span><h4>Write the SRS</h4><p>A 15-section SRS covering 7 user roles, 60+ modules, the APIs and the database design.</p></div>
+              <div class="phase"><span class="n">04 · PLAN</span><h4>Milestones and sprints</h4><p>Split the rebuild into milestones and sprints, then assigned tasks and bugs and ran planning and retrospectives.</p></div>
+              <div class="phase"><span class="n">05 · VALIDATE</span><h4>UAT and API testing</h4><p>Designed the mobile app with AI tools, ran UAT and Postman API tests, and demoed every release.</p></div>
+              <div class="phase"><span class="n">06 · GROW</span><h4>Recommend features</h4><p>Turned client pain points and market value into feature proposals the client chose to fund.</p></div>
+            </div>
+            <h3>Compliance from day one</h3>
+            <p>Because the platform handles protected health information for US agencies, I researched the applicable healthcare regulations before design started and made <strong>HIPAA and BAA compliance a requirement</strong>, not an afterthought. Access control, audit trails and data handling were specified up front, alongside the functional modules.</p>
+            <h3>A living specification</h3>
+            <p>I kept an SRS tracking worksheet alongside the document. Each module row held its inputs, validations, APIs, data tables, open questions and the client's review status. It became the shared checklist for development, QA and client sign-off, and the input to every change request.</p>
+          </section>
+
+          <section id="decisions">
+            <h2><span class="num">03</span>Key decisions</h2>
+            <div class="decision"><span class="ico"><svg><use href="#i-arrow"/></svg></span><div><h4>Rebuild, not patch</h4><p>With no original developers and undocumented behavior, every patch added risk. A documented rebuild gave the client a platform their team could own and extend.</p></div></div>
+            <div class="decision"><span class="ico"><svg><use href="#i-lock"/></svg></span><div><h4>Compliance is scoped, not retrofitted</h4><p>HIPAA and BAA obligations were written into the requirements before design, which avoided rework late in delivery.</p></div></div>
+            <div class="decision"><span class="ico"><svg><use href="#i-award"/></svg></span><div><h4>Grow scope through value, with change control</h4><p>New features came in through change requests with impact on effort and timeline, so growth never derailed the committed milestones.</p></div></div>
+          </section>
+
+          <section id="outcomes">
+            <h2><span class="num">04</span>Outcomes</h2>
+            <div class="outcomes">
+              <div class="outcome"><b>1.5×</b><span>the original scope delivered, ahead of the deadline</span></div>
+              <div class="outcome"><b>~1,000</b><span>extra development hours won from features I recommended</span></div>
+              <div class="outcome"><b>Live</b><span>in production and used by US care agencies</span></div>
+            </div>
+            <p>The rebuild shipped to production, and the client funded roughly 1,000 additional development hours based on the features I proposed. I received <strong>Employee of the Month (July 2026)</strong> for taking this platform and one other to production, and project completion certificates in May 2026.</p>
+            <h3>Deliverables</h3>
+            <ul class="tags">
+              <li class="tag">BRD</li><li class="tag">SRS (15 sections)</li><li class="tag">API documentation</li><li class="tag">Change requests</li><li class="tag">SRS tracker</li><li class="tag">System architecture</li><li class="tag">Sequence diagrams</li><li class="tag">User-flow diagrams</li><li class="tag">UAT</li>
+            </ul>
+          </section>
+
+          <section id="learned">
+            <h2><span class="num">05</span>What I learned</h2>
+            <ul class="list">
+              <li><strong>Document the "as is" before the "to be".</strong> On a legacy system the first deliverable is an honest description of current behavior. Without it, nobody can agree on what the rebuild must preserve.</li>
+              <li><strong>A tracker beats a long document.</strong> The SRS explains; the tracker gets things done. Teams act on rows with owners and statuses.</li>
+              <li><strong>Scope growth is good news when it is controlled.</strong> Recommending features grew the engagement, and change requests kept the delivery predictable.</li>
+            </ul>
+          </section>
+        </article>
+      </div>
+
+      <a class="next-case" href="mneme.html">
+        <div><span class="k">Next case study</span><b>Mneme: one searchable memory for delivery</b></div>
+        <span class="arrow-c"><svg><use href="#i-arrow"/></svg></span>
+      </a>
+    </div>
+
+  </main>
+
+  <div class="container">
+    <footer class="site-foot">
+      <span>© <span data-year>2026</span> Ayush Kumar Singh</span>
+      <span><a href="https://www.linkedin.com/in/ayush-singh-914495189/" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://github.com/ayushsingh0456" target="_blank" rel="noopener">GitHub</a> · <a href="mailto:ayushsingh.06533@gmail.com">Email</a></span>
+    </footer>
+  </div>
+  <div class="toast" role="status" aria-live="polite"></div>
+  <script src="../js/main.js" defer></script>
+</body>
+</html>
