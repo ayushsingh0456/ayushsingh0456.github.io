@@ -9,7 +9,7 @@
 <rect x="0" y="0" width="1280" height="800" fill="#ffffff"/>
 <g font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
 <rect x="0" y="0" width="1280" height="56" rx="0" fill="#f5f5f5" stroke="#bdbdbd" stroke-width="1"/>
-<text x="20" y="36" font-size="20" font-weight="800" fill="#212121" text-anchor="start">BRASA</text>
+<text x="20" y="36" font-size="20" font-weight="800" fill="#212121" text-anchor="start">RESTAURANT</text>
 <text x="110" y="35" font-size="15" font-weight="600" fill="#212121" text-anchor="start">Market Hall  -  open until 21:00</text>
 <rect x="560" y="14" width="92" height="28" rx="14" fill="#ffffff" stroke="#212121" stroke-width="1.5"/>
 <circle cx="578" cy="28" r="6" fill="#212121"/>
@@ -26,7 +26,7 @@
 <text x="32" y="124" font-size="13" font-weight="700" fill="#212121" text-anchor="start">Chicken Grill Bowl</text>
 <text x="32" y="168" font-size="14" font-weight="600" fill="#424242" text-anchor="start">EUR 9.40</text>
 <rect x="182" y="94" width="150" height="86" rx="10" fill="#e0e0e0" stroke="#757575" stroke-width="1.5"/>
-<text x="194" y="124" font-size="13" font-weight="700" fill="#212121" text-anchor="start">Beef Brasa Bowl</text>
+<text x="194" y="124" font-size="13" font-weight="700" fill="#212121" text-anchor="start">Beef Grill Bowl</text>
 <text x="194" y="168" font-size="14" font-weight="600" fill="#424242" text-anchor="start">EUR 10.90</text>
 <rect x="344" y="94" width="150" height="86" rx="10" fill="#e0e0e0" stroke="#757575" stroke-width="1.5"/>
 <text x="356" y="124" font-size="13" font-weight="700" fill="#212121" text-anchor="start">Halloumi Veggie</text>
