@@ -8,10 +8,10 @@ Business Analyst & Product Owner working on SaaS, web and mobile products: requi
 
 | Project | Type | Links |
 |---|---|---|
-| US Home-Care Operations Platform | Client work, web and mobile SaaS | [Case study](https://ayushsingh0456.github.io/case-studies/tendwell.html) · [Repository](https://github.com/ayushsingh0456/us-home-care-operations-platform) |
+| US Home-Care Operations Platform | Client work, web and mobile SaaS | [Case study](https://ayushsingh0456.github.io/case-studies/home-care.html) · [Repository](https://github.com/ayushsingh0456/us-home-care-operations-platform) |
 | AI Financial Statements & Valuation SaaS | Client work, under NDA | Summary on the home page |
-| Multi-Branch Restaurant Ordering & POS Platform | Client work | [Case study](https://ayushsingh0456.github.io/case-studies/brasa.html) · [Repository](https://github.com/ayushsingh0456/multi-branch-restaurant-ordering-pos-platform) |
-| Local Commerce & Booking Platform | Client work | [Case study](https://ayushsingh0456.github.io/case-studies/quartier.html) · [Repository](https://github.com/ayushsingh0456/local-commerce-booking-platform) |
+| Multi-Branch Restaurant Ordering & POS Platform | Client work | [Case study](https://ayushsingh0456.github.io/case-studies/restaurant-pos.html) · [Repository](https://github.com/ayushsingh0456/multi-branch-restaurant-ordering-pos-platform) |
+| Local Commerce & Booking Platform | Client work | [Case study](https://ayushsingh0456.github.io/case-studies/local-commerce.html) · [Repository](https://github.com/ayushsingh0456/local-commerce-booking-platform) |
 | Mneme: AI operational workspace | Own product, prototype | [Case study](https://ayushsingh0456.github.io/case-studies/mneme.html) · [Repository](https://github.com/ayushsingh0456/context-hub) |
 | Bunny: a shared planner for two | Own product, live | [Case study](https://ayushsingh0456.github.io/case-studies/bunny.html) · [Live app](https://bunny-planner.vercel.app) |
 
