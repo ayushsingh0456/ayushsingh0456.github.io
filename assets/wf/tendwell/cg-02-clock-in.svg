@@ -5,7 +5,7 @@
 <g font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
 <text x="20" y="30" font-size="15" font-weight="700" fill="#212121" text-anchor="start">A. Ready to clock in</text>
 <text x="450" y="30" font-size="15" font-weight="700" fill="#212121" text-anchor="start">B. Warning: low location accuracy</text>
-<text x="880" y="30" font-size="15" font-weight="700" fill="#212121" text-anchor="start">C. Clocked in: result from Tendwell</text>
+<text x="880" y="30" font-size="15" font-weight="700" fill="#212121" text-anchor="start">C. Clocked in: result from the platform</text>
 <!-- Phone frame 390x844 at 20,48 -->
 <rect x="20" y="48" width="390" height="844" rx="44" fill="#ffffff" stroke="#757575" stroke-width="2"/>
 <text x="54" y="80" font-size="15" font-weight="600" fill="#212121" text-anchor="start">08:02</text>
@@ -52,7 +52,7 @@
 <line x1="215" y1="478" x2="215" y2="500" stroke="#212121" stroke-width="2"/>
 <circle cx="65" cy="489" r="6" fill="#212121" stroke="#ffffff" stroke-width="2"/>
 <text x="215" y="514" font-size="11" font-weight="400" fill="#424242" text-anchor="middle">100 m limit</text>
-<text x="52" y="536" font-size="12" font-weight="400" fill="#616161" text-anchor="start">Distance to the address is checked by Tendwell</text>
+<text x="52" y="536" font-size="12" font-weight="400" fill="#616161" text-anchor="start">Distance to the address is checked by the platform</text>
 <text x="52" y="552" font-size="12" font-weight="400" fill="#616161" text-anchor="start">when you clock in. Your phone does not decide it.</text>
 <circle cx="392" cy="414" r="12" fill="#212121" stroke="#ffffff" stroke-width="2.5"/>
 <text x="392" y="418.5" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">3</text>
@@ -92,9 +92,9 @@
 <polygon points="492,382.1 503.0,401.9 481.0,401.9" fill="#212121"/>
 <text x="492" y="398.9" font-size="13.2" font-weight="700" fill="#ffffff" text-anchor="middle">!</text>
 <text x="514" y="398" font-size="16" font-weight="700" fill="#212121" text-anchor="start">Location is approximate</text>
-<text x="482" y="426" font-size="13" font-weight="400" fill="#212121" text-anchor="start">GPS accuracy 3,400 m. Tendwell needs 100 m</text>
+<text x="482" y="426" font-size="13" font-weight="400" fill="#212121" text-anchor="start">GPS accuracy 3,400 m. The platform needs 100 m</text>
 <text x="482" y="444" font-size="13" font-weight="400" fill="#212121" text-anchor="start">or better to check the distance to the address.</text>
-<text x="482" y="468" font-size="13" font-weight="700" fill="#212121" text-anchor="start">Precise Location is off for Tendwell.</text>
+<text x="482" y="468" font-size="13" font-weight="700" fill="#212121" text-anchor="start">Precise Location is off for the platform.</text>
 <rect x="482" y="488" width="326" height="48" rx="10" fill="#ffffff" stroke="#212121" stroke-width="1.5"/>
 <text x="645.0" y="517.4" font-size="15" font-weight="600" fill="#212121" text-anchor="middle">Open Settings</text>
 <rect x="482" y="546" width="326" height="48" rx="10" fill="#ffffff" stroke="#212121" stroke-width="1.5"/>
@@ -125,10 +125,10 @@
 <circle cx="924" cy="194" r="12" fill="#212121" stroke="none"/>
 <path d="M918.5 194 L922.1666666666666 197.85 L929.5 190.15" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 <text x="946" y="190" font-size="15" font-weight="700" fill="#212121" text-anchor="start">Clocked in at 08:03</text>
-<text x="946" y="210" font-size="12" font-weight="400" fill="#424242" text-anchor="start">Received by Tendwell 08:03:02</text>
+<text x="946" y="210" font-size="12" font-weight="400" fill="#424242" text-anchor="start">Received by the platform 08:03:02</text>
 <!-- Server-computed location result -->
 <rect x="896" y="236" width="358" height="184" rx="12" fill="#ffffff" stroke="#bdbdbd" stroke-width="1"/>
-<text x="912" y="262" font-size="14" font-weight="700" fill="#212121" text-anchor="start">Location check by Tendwell</text>
+<text x="912" y="262" font-size="14" font-weight="700" fill="#212121" text-anchor="start">Location check by the platform</text>
 <text x="912" y="292" font-size="13" font-weight="400" fill="#424242" text-anchor="start">Distance from service address</text>
 <text x="1238" y="292" font-size="13" font-weight="700" fill="#212121" text-anchor="end">14 m</text>
 <line x1="912" y1="302" x2="1238" y2="302" stroke="#e0e0e0" stroke-width="1"/>
