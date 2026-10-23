@@ -1,30 +1,31 @@
-# ayushsingh0456.github.io
+# Ayush Kumar Singh · Portfolio
 
-Portfolio of Ayush Kumar Singh, Business Analyst and Product Owner. Live at https://ayushsingh0456.github.io.
+Business Analyst & Product Owner working on SaaS, web and mobile products: requirements management, solution design and Agile delivery.
 
-## What is here
+**Live site:** [ayushsingh0456.github.io](https://ayushsingh0456.github.io) · [LinkedIn](https://www.linkedin.com/in/ayush-singh-914495189/) · [GitHub](https://github.com/ayushsingh0456)
 
-| Page | What it shows |
-|---|---|
-| `index.html` | Short intro, six projects, skills, experience and contact |
-| `library.html` | Documents from three case-study repositories, filterable by project and type, opened in an in-page viewer |
-| `case-studies/tendwell.html` | US Home-Care Operations Platform |
-| `case-studies/quartier.html` | Local Commerce & Booking Platform |
-| `case-studies/brasa.html` | Multi-Branch Restaurant Ordering & POS Platform |
-| `case-studies/healthcare-ops-rebuild.html` | Client rebuild of a care-agency platform, described without client material |
-| `case-studies/mneme.html` | Mneme, an AI workspace prototype built with vibe coding |
-| `case-studies/bunny.html` | Bunny, a shared planner PWA for two people |
+## Projects on the site
 
-The document viewer renders Markdown, CSV and OpenAPI files straight from the public repositories, with Mermaid diagrams drawn in the browser:
+| Project | Type | Links |
+|---|---|---|
+| US Home-Care Operations Platform | Client work, web and mobile SaaS | [Case study](https://ayushsingh0456.github.io/case-studies/tendwell.html) · [Repository](https://github.com/ayushsingh0456/us-home-care-operations-platform) |
+| AI Financial Statements & Valuation SaaS | Client work, under NDA | Summary on the home page |
+| Multi-Branch Restaurant Ordering & POS Platform | Client work | [Case study](https://ayushsingh0456.github.io/case-studies/brasa.html) · [Repository](https://github.com/ayushsingh0456/multi-branch-restaurant-ordering-pos-platform) |
+| Local Commerce & Booking Platform | Client work | [Case study](https://ayushsingh0456.github.io/case-studies/quartier.html) · [Repository](https://github.com/ayushsingh0456/local-commerce-booking-platform) |
+| Mneme: AI operational workspace | Own product, prototype | [Case study](https://ayushsingh0456.github.io/case-studies/mneme.html) · [Repository](https://github.com/ayushsingh0456/context-hub) |
+| Bunny: a shared planner for two | Own product, live | [Case study](https://ayushsingh0456.github.io/case-studies/bunny.html) · [Live app](https://bunny-planner.vercel.app) |
 
-- [us-home-care-operations-platform](https://github.com/ayushsingh0456/us-home-care-operations-platform)
-- [local-commerce-booking-platform](https://github.com/ayushsingh0456/local-commerce-booking-platform)
-- [multi-branch-restaurant-ordering-pos-platform](https://github.com/ayushsingh0456/multi-branch-restaurant-ordering-pos-platform)
+For the client projects, client details are withheld and names and data are changed. The three public repositories hold the full BA document sets (BRD, SRS, business rules, user stories, OpenAPI, test cases, UAT and incident reviews), and the site's [document library](https://ayushsingh0456.github.io/library.html) opens them in the browser with diagrams rendered.
 
-## Tech
+## How the site is built
 
-Static HTML, CSS and vanilla JavaScript, hosted on GitHub Pages. No build step is needed to serve it. marked, Mermaid and js-yaml load from jsDelivr only when a document is opened. Fonts: Instrument Serif, Inter and JetBrains Mono from Google Fonts.
+Static HTML, CSS and vanilla JavaScript on GitHub Pages, with no build step. The document library fetches Markdown, CSV and OpenAPI files from the public repositories and renders them with marked, Mermaid and js-yaml, which load from jsDelivr only when a document is opened.
 
-## Note on content
+```
+index.html          Home: intro, projects, about, experience, contact
+library.html        Document library for the three case-study repositories
+case-studies/       One page per project
+css/  js/  assets/  Styles, scripts, images, wireframes and PDFs
+```
 
-Client work is described at the level my agreements allow. In the case studies, client details are withheld and names and data are changed.
+To preview locally, run `python3 -m http.server` in this folder and open http://localhost:8000.
