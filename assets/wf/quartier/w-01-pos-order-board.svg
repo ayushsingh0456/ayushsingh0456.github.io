@@ -6,7 +6,7 @@
 <rect x="0" y="0" width="1280" height="800" rx="0" fill="#ffffff" stroke="#757575" stroke-width="1.5"/>
 <rect x="0" y="0" width="1280" height="56" rx="0" fill="#eeeeee" stroke="none"/>
 <line x1="0" y1="56" x2="1280" y2="56" stroke="#bdbdbd" stroke-width="1"/>
-<text x="24" y="35" font-size="18" font-weight="700" fill="#212121" text-anchor="start">Quartier</text>
+<text x="24" y="35" font-size="18" font-weight="700" fill="#212121" text-anchor="start">Local Commerce</text>
 <text x="118" y="35" font-size="15" font-weight="400" fill="#424242" text-anchor="start">Bestelltafel · Café Mohnblume, Kornblumengasse 9</text>
 <text x="1256" y="35" font-size="13" font-weight="400" fill="#424242" text-anchor="end">Tobias G. · Mitarbeiter</text>
 <!-- Toolbar -->
@@ -129,7 +129,7 @@
 <line x1="1000" y1="400" x2="1240" y2="400" stroke="#e0e0e0" stroke-width="1"/>
 <circle cx="1254" cy="120" r="12" fill="#212121" stroke="#ffffff" stroke-width="2.5"/>
 <text x="1254" y="124.5" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">10</text>
-<text x="984" y="476" font-size="12" font-weight="600" fill="#424242" text-anchor="start">Kein Kassenbetrieb in Quartier:</text>
+<text x="984" y="476" font-size="12" font-weight="600" fill="#424242" text-anchor="start">Kein Kassenbetrieb in dieser Plattform:</text>
 <text x="984" y="494" font-size="12" font-weight="400" fill="#424242" text-anchor="start">Zahlungen bei Abholung über die</text>
 <text x="984" y="512" font-size="12" font-weight="400" fill="#424242" text-anchor="start">Registrierkasse des Betriebs.</text>
 </g>
