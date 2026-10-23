@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en" data-theme="dark" data-base="../" data-library="../library.html">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bunny · Ayush Kumar Singh</title>
+<meta name="description" content="Bunny: a shared planner PWA for two people, which I conceived, specified, designed and shipped myself with AI-assisted development. Private daily plans, meals and groceries, plus a shared space, with lock-screen reminders.">
+<meta name="author" content="Ayush Kumar Singh">
+<link rel="canonical" href="https://ayushsingh0456.github.io/case-studies/bunny.html">
+<meta name="theme-color" content="#f6f4ef" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0a0d12" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Bunny · Ayush Kumar Singh">
+<meta property="og:description" content="Bunny: a shared planner PWA for two people, which I conceived, specified, designed and shipped myself with AI-assisted development. Private daily plans, meals and groceries, plus a shared space, with lock-screen reminders.">
+<meta property="og:url" content="https://ayushsingh0456.github.io/case-studies/bunny.html">
+<meta property="og:image" content="https://ayushsingh0456.github.io/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/styles.css">
+<script>(function(){try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t);}catch(e){}})();</script>
+
+</head>
+<body>
+<a class="skip-link" href="#content">Skip to content</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="i-github" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path fill="currentColor" stroke="none" d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.58.23 2.75.11 3.04.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.26 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></g></symbol><symbol id="i-linkedin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path fill="currentColor" stroke="none" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></g></symbol><symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16v12H4zM4 7l8 6 8-6"/></g></symbol><symbol id="i-sun" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></g></symbol><symbol id="i-moon" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z"/></g></symbol><symbol id="i-arrow" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></g></symbol><symbol id="i-arrow-left" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></g></symbol><symbol id="i-arrow-ur" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></g></symbol><symbol id="i-chev" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></g></symbol><symbol id="i-chev-left" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m15 6-6 6 6 6"/></g></symbol><symbol id="i-chev-right" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></g></symbol><symbol id="i-copy" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></g></symbol><symbol id="i-award" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="m8.5 14-1.5 8 5-3 5 3-1.5-8"/></g></symbol><symbol id="i-lock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></g></symbol><symbol id="i-menu" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h16"/></g></symbol><symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.1-7-11.5a7 7 0 0 1 14 0C19 14.9 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></g></symbol><symbol id="i-doc" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></g></symbol><symbol id="i-download" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></g></symbol><symbol id="i-external" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></g></symbol><symbol id="i-link" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14a4 4 0 0 0 5.66 0l3-3a4 4 0 0 0-5.66-5.66l-1 1"/><path d="M14 10a4 4 0 0 0-5.66 0l-3 3a4 4 0 0 0 5.66 5.66l1-1"/></g></symbol><symbol id="i-x" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6 6 18"/></g></symbol><symbol id="i-search" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></g></symbol><symbol id="i-compass" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5z"/></g></symbol><symbol id="i-calendar" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/></g></symbol><symbol id="i-check" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9 17l11-11"/></g></symbol><symbol id="i-checklist" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6h11M9 12h11M9 18h11"/><path d="m3.5 6 1.5 1.5L7.5 5M3.5 12l1.5 1.5L7.5 11M3.5 18l1.5 1.5L7.5 17"/></g></symbol><symbol id="i-users" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.5a3.5 3.5 0 0 1 0 7M18 14.5a6.5 6.5 0 0 1 3.5 5.5"/></g></symbol><symbol id="i-sparkle" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6.3 6.3l2.5 2.5M15.2 15.2l2.5 2.5M6.3 17.7l2.5-2.5M15.2 8.8l2.5-2.5"/></g></symbol><symbol id="i-health" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7.5-4.6-9-9.3C1.9 7.1 4.2 4 7.4 4c2 0 3.6 1.2 4.6 2.8C13 5.2 14.6 4 16.6 4c3.2 0 5.5 3.1 4.4 6.7C19.5 15.4 12 20 12 20Z"/><path d="M8 11h2l1-2 2 4 1-2h2"/></g></symbol><symbol id="i-store" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9 5.5 4h13L20 9M4 9h16v11H4zM4 9a2.7 2.7 0 0 0 5.3 0 2.7 2.7 0 0 0 5.4 0 2.7 2.7 0 0 0 5.3 0M10 20v-5h4v5"/></g></symbol><symbol id="i-utensils" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3v8a2 2 0 0 0 2 2v8M11 3v6a2 2 0 0 1-2 2M3 3v6a2 2 0 0 0 2 2M17 21V3c-2 1-3.5 3.5-3.5 7v3H17"/></g></symbol><symbol id="i-wallet" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7a2 2 0 0 1 2-2h11v4"/><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M16 13.5h2"/></g></symbol><symbol id="i-dumbbell" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 6.5v11M17.5 6.5v11M3.5 9v6M20.5 9v6M6.5 12h11"/></g></symbol><symbol id="i-hotel" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V8l9-5 9 5v13M9 21v-6h6v6M8 10h.01M12 10h.01M16 10h.01"/></g></symbol><symbol id="i-cpu" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9.5 9.5h5v5h-5zM9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></g></symbol><symbol id="i-flow" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="6" rx="1.5"/><rect x="14" y="15" width="7" height="6" rx="1.5"/><path d="M6.5 9v4.5a2 2 0 0 0 2 2H14"/></g></symbol><symbol id="i-shield" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4.5 6v6c0 4.4 3.2 7.8 7.5 9 4.3-1.2 7.5-4.6 7.5-9V6z"/><path d="m9 12 2 2 4-4"/></g></symbol><symbol id="i-target" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/></g></symbol><symbol id="i-code" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m8 8-4 4 4 4M16 8l4 4-4 4M14 5l-4 14"/></g></symbol><symbol id="i-layers" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 9 5-9 5-9-5z"/><path d="m3 13 9 5 9-5"/></g></symbol><symbol id="i-rocket" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 15c-1 1-1.5 4-1.5 4.5S6 19 9 18M14.5 4.5c3-1 5-1 5-1s0 2-1 5L12 15l-3-3z"/><path d="M9 12 6.5 11.5 9 8h4M12 15l.5 2.5L16 15v-4"/></g></symbol><symbol id="i-chat" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9.5h8M8 12.5h5"/></g></symbol></svg>
+<header class="nav">
+  <div class="container">
+    <a class="brand" href="../index.html" aria-label="Portfolio home"><span class="brand-avatar"><img src="../assets/img/ayush.webp" alt="" width="36" height="36"></span><span class="brand-name">Ayush Kumar Singh<small>Business Analyst &amp; Product Owner</small></span></a>
+    <nav aria-label="Primary"><ul class="nav-links"><li><a href="../index.html#work">Projects</a></li><li><a href="../index.html#about">About</a></li><li><a href="../index.html#experience">Experience</a></li><li><a href="../index.html#contact">Contact</a></li></ul></nav>
+    <div class="nav-right">
+      <button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-label="Toggle theme"><svg class="i-sun" aria-hidden="true"><use href="#i-sun"/></svg><svg class="i-moon" aria-hidden="true"><use href="#i-moon"/></svg></button>
+      <a class="btn btn-primary btn-sm btn-nav" href="../index.html#contact">Let&#x27;s connect</a>
+      <button class="icon-btn menu-btn" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><svg aria-hidden="true"><use href="#i-menu"/></svg></button>
+    </div>
+  </div>
+  <div class="progress" aria-hidden="true"></div>
+</header>
+<nav class="mobile-menu" id="mobile-menu" aria-label="Mobile"><a href="../index.html#work">Projects</a><a href="../index.html#about">About</a><a href="../index.html#experience">Experience</a><a href="../index.html#contact">Contact</a></nav>
+<main id="content">
+<div class="backdrop" aria-hidden="true"></div>
+<div class="container">
+  <section class="cs-hero">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="../index.html#work">Projects</a><span>/</span><span>Bunny</span></nav>
+    <h1>Bunny: a little planner for <em>two</em></h1>
+    <p class="cs-sub">Daily tasks, habits, meals and groceries usually live in four different apps, and shared plans get buried in chat threads. Bunny is a small installable planner that keeps each person's day private and gives two people one shared space, with a code-drawn bunny called Bun to greet you and celebrate your wins.</p>
+    <div class="cs-badges"><span class="status status-live">Live</span><span class="tag">Product discovery</span><span class="tag">Specs and designs</span><span class="tag">Vibe coding</span></div>
+    <div class="cs-cta"><a class="btn btn-primary" href="https://bunny-planner.vercel.app" target="_blank" rel="noopener">Open the live app <svg aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+    <dl class="meta-grid"><div class="meta"><dt>My role</dt><dd>Product owner, BA, designer, builder and tester: idea, scope, spec, designs, milestones, end-to-end testing and deployment</dd></div><div class="meta"><dt>Users</dt><dd>Two people: each has a private planner, and can share one space</dd></div><div class="meta"><dt>Platform</dt><dd>Installable web app (PWA) on Android</dd></div><div class="meta"><dt>Screens</dt><dd>22 designed screens</dd></div><div class="meta"><dt>Built with</dt><dd>React, TypeScript, Supabase, Vercel</dd></div></dl>
+    <div class="tldr"><div><span class="k">Problem</span><p>Personal planning and shared life admin are scattered across apps, and reminders feel like pressure.</p></div><div><span class="k">What I did</span><p>Scoped the idea, wrote and reviewed the spec, designed 22 screens with Claude and Figma MCP, split the build into milestones and shipped it.</p></div><div><span class="k">Outcome</span><p>A live, installable planner with reminders, offline use and private-by-default sharing, running on free tiers.</p></div></div>
+  </section>
+  <div class="cs-layout">
+    <nav class="toc" aria-label="On this page"><p>On this page</p><ol><li><a href="#problem">The problem</a></li><li><a href="#scope">Scope</a></li><li><a href="#product">The product</a></li><li><a href="#decisions">Key decisions</a></li><li><a href="#docs">Requirements</a></li><li><a href="#build">How I built it</a></li><li><a href="#milestones">Milestones</a></li><li><a href="#testing">Testing</a></li></ol></nav>
+    <article class="prose">
+<section id="problem"><h2><span class="num">01</span>The problem</h2>
+  <p class="lede">Planning a shared life is small, personal and a bit emotional, and most planner apps are built for teams.</p>
+  <ul class="list">
+    <li>Tasks, habits, meals and groceries live in four different apps.</li>
+    <li>Shared lists and trip plans end up buried in chat threads.</li>
+    <li>Reminders feel like pressure instead of support.</li>
+    <li>Generic tools have no personality, so people stop opening them.</li>
+  </ul>
+  <div class="callout"><span class="label">Goal</span><p>Plan days, weeks and the far future in as few taps as possible, with repeating routines that never need re-creating, reminders that reach the lock screen, and a warm, personal feel.</p></div>
+</section>
+<section id="scope"><h2><span class="num">02</span>Scope</h2>
+  <p>I prioritised features into must-have, should-have and could-have, then split them into two phases. Phase 2 only starts after Phase 1 has been used daily for two weeks.</p>
+  <div class="table-wrap"><table><thead><tr><th>Area</th><th>Phase 1: one person, every day</th><th>Phase 2: together</th></tr></thead><tbody>
+    <tr><td>Account</td><td>Email sign-in, stay signed in</td><td>Invite one person with a code</td></tr>
+    <tr><td>Today and planning</td><td>Tasks, routines, count goals, quick add, schedule picker, week view, "Someday" shelf</td><td>Shared tasks on Today</td></tr>
+    <tr><td>Task details</td><td>Per-day notes, remembered choices, history, streaks</td><td>-</td></tr>
+    <tr><td>Food</td><td>Meal plan with custom slots and repeats, recipes, saved ideas</td><td>AI recipe from a caption</td></tr>
+    <tr><td>Groceries</td><td>My list, partial shopping, offline in the shop</td><td>Shared list</td></tr>
+    <tr><td>Bills and reports</td><td>Monthly checklist, weekly and monthly reports</td><td>Shared tasks done together</td></tr>
+    <tr><td>Together</td><td>-</td><td>Little notes, trip and date plans, partner notifications, surprise mode</td></tr>
+    <tr><td>Bun</td><td>Animated mascot, moods, celebrations, sweet names</td><td>Names for each other</td></tr>
+  </tbody></table></div>
+  <p><strong>Not in scope:</strong> a chat app, a social network, public sign-up, calorie counting and iPhone support.</p>
+</section>
+<section id="product"><h2><span class="num">03</span>The product</h2>
+  <p>Four bottom tabs and a centre add button. Every screen is reachable within two taps of Today.</p>
+  <div class="phase-grid">
+    <div class="phase"><span class="n">TODAY</span><h4>The day at a glance</h4><p>Tasks, routines, water, meals, groceries, bills and a weekly report card, with a progress ring and streaks.</p></div>
+    <div class="phase"><span class="n">PLANNING</span><h4>Few taps, no re-entry</h4><p>Quick add and one schedule picker for tasks, routines, meals and recipes: once, chosen dates, weekdays or every day.</p></div>
+    <div class="phase"><span class="n">FOOD</span><h4>From plan to shop</h4><p>Meal slots with repeats, recipes that rescale, a cooking mode and ingredients that flow to the grocery list.</p></div>
+    <div class="phase"><span class="n">REMINDERS</span><h4>Gentle by design</h4><p>Lock-screen reminders, one nudge if something is missed, a morning hello and quiet hours.</p></div>
+    <div class="phase"><span class="n">TOGETHER</span><h4>Private by default</h4><p>Shared list, tasks, little notes and trip or date plans. Everything else stays private.</p></div>
+    <div class="phase"><span class="n">BUN</span><h4>Personality in code</h4><p>A bunny mascot drawn and animated in code: greetings, moods, celebrations and small surprises.</p></div>
+  </div>
+</section>
+<section id="decisions"><h2><span class="num">04</span>Key decisions</h2>
+  <div class="decision"><span class="ico"><svg aria-hidden="true"><use href="#i-lock"/></svg></span><div><h4>Privacy is enforced in the database</h4><p>Surprise plans and the names one person picks for the other are protected with row-level security, not just hidden in the interface.</p></div></div>
+  <div class="decision"><span class="ico"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span><div><h4>Local-first, works offline</h4><p>The app shell and recent data are cached, and offline changes are queued and synced in order, so the shop with no signal is not a problem.</p></div></div>
+  <div class="decision"><span class="ico"><svg aria-hidden="true"><use href="#i-pin"/></svg></span><div><h4>Reminders that do not nag</h4><p>One reminder at the set time and at most one nudge 15 minutes later, with quiet hours respected.</p></div></div>
+  <div class="decision"><span class="ico"><svg aria-hidden="true"><use href="#i-doc"/></svg></span><div><h4>Meals are tasks too</h4><p>One done-or-missed model for meals and tasks keeps reports consistent.</p></div></div>
+  <div class="decision"><span class="ico"><svg aria-hidden="true"><use href="#i-calendar"/></svg></span><div><h4>Repeats are stored as rules</h4><p>Only the days a person touches are saved, so editing a repeating item never leaves orphan rows.</p></div></div>
+</section>
+<section id="docs"><h2><span class="num">05</span>Requirements and documentation</h2>
+  <p>I wrote the full product spec before any code. It covers goals and non-goals, a 22-screen navigation map listing every tappable element, feature behaviour, empty states and error handling, offline and sync rules, a data model, privacy rules and non-functional requirements. I then reviewed it for gaps and closed the open questions in a decisions log. The documents live in the project's private repository.</p>
+  <div class="table-wrap"><table><thead><tr><th>Quality area</th><th>Requirement</th></tr></thead><tbody>
+    <tr><td>Speed</td><td>Today opens from cache in under 1 second on a mid-range Android phone, and a tick feels instant</td></tr>
+    <tr><td>Offline</td><td>App shell and the last 30 days of data cached; offline changes sync in order</td></tr>
+    <tr><td>Reminders</td><td>Sent within 2 minutes of the set time, never during quiet hours, never duplicated</td></tr>
+    <tr><td>Security and privacy</td><td>Row-level security on every table, single-use invite codes, no analytics or third-party trackers</td></tr>
+    <tr><td>Accessibility</td><td>44 px touch targets, 4.5:1 contrast, reduced-motion respected</td></tr>
+    <tr><td>Cost</td><td>Runs on free tiers for two users</td></tr>
+  </tbody></table></div>
+</section>
+<section id="build"><h2><span class="num">06</span>How I built it</h2>
+  <p>The process was spec first: idea, scope, written and reviewed documentation, then designs created with Claude connected to Figma over MCP and refined by hand. I divided the build into milestones and directed AI coding tools from the specs, reviewing each milestone on a real phone before moving on, with a rule of no redesigning while building. It is deployed on Vercel, with Supabase for the backend.</p>
+  <dl class="stack-table">
+    <div class="stack-row"><dt>Front end</dt><dd>React 18 and TypeScript on Vite, installable PWA with a service worker and offline cache</dd></div>
+    <div class="stack-row"><dt>Backend</dt><dd>Supabase: Postgres with row-level security, Auth, Realtime, Storage, Edge Functions and scheduled jobs</dd></div>
+    <div class="stack-row"><dt>Notifications</dt><dd>Standard Web Push with VAPID keys, sent by one Edge Function that runs every minute</dd></div>
+    <div class="stack-row"><dt>Hosting</dt><dd>Vercel, deployed on every push</dd></div>
+    <div class="stack-row"><dt>Testing</dt><dd>End-to-end testing by me: unit tests, Playwright scripts per milestone and manual testing on a real phone</dd></div>
+  </dl>
+</section>
+<section id="milestones"><h2><span class="num">07</span>Milestones</h2>
+  <p>Each milestone ended with something usable on a phone.</p>
+  <div class="table-wrap"><table><thead><tr><th>#</th><th>Milestone</th><th>Outcome</th></tr></thead><tbody>
+    <tr><td>M1</td><td>Foundation, Today and Bun</td><td>Installable PWA, ticks, water, the interactive Bun</td></tr>
+    <tr><td>M2</td><td>Planning</td><td>Quick add, schedule picker, task details, week view, undo</td></tr>
+    <tr><td>M3</td><td>Food and groceries</td><td>Meal plan with repeats, recipes, ideas, partial shopping</td></tr>
+    <tr><td>M4</td><td>Bills, reports, profile</td><td>Reports, settings, Bun colour, data export</td></tr>
+    <tr><td>M5</td><td>Accounts and sync</td><td>Sign-in, local-first sync, offline retry</td></tr>
+    <tr><td>M6</td><td>Reminders and go-live</td><td>Web Push, scheduled function, deployment</td></tr>
+    <tr><td>M7</td><td>Together</td><td>Invites, shared lists and tasks, notes, plans, partner notifications</td></tr>
+  </tbody></table></div>
+</section>
+<section id="testing"><h2><span class="num">08</span>Testing</h2>
+  <p>I did the end-to-end testing myself, both automated and by hand on a real phone, at every milestone and again after go-live.</p>
+  <dl class="stack-table">
+    <div class="stack-row"><dt>Automated</dt><dd>Unit tests for the recurrence and reminder rules, Playwright scripts per milestone, PWA checks and a smoke test</dd></div>
+    <div class="stack-row"><dt>Functional</dt><dd>Every screen and flow: planning, repeats, meals, recipes, groceries, bills, reports, profile and settings</dd></div>
+    <div class="stack-row"><dt>Offline and sync</dt><dd>Changes made with no signal, then synced in order once back online</dd></div>
+    <div class="stack-row"><dt>Notifications</dt><dd>Lock-screen reminders, the missed-task nudge, the evening wrap-up and quiet hours</dd></div>
+    <div class="stack-row"><dt>Two-person flows</dt><dd>Invite codes, shared tasks and lists, notes, plans and partner notifications, tested from both accounts</dd></div>
+    <div class="stack-row"><dt>Privacy</dt><dd>Checked from the other account that private items, surprise plans and sweet names stay hidden, as the database rules require</dd></div>
+    <div class="stack-row"><dt>Install and UI</dt><dd>Install as an app on Android, light and dark theme, and regression after every milestone</dd></div>
+  </dl>
+</section></article>
+  </div>
+  <a class="next-case" href="mneme.html"><div><span class="k">Next project</span><b>Mneme: one searchable memory for project delivery</b></div><span class="arrow-c"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+</div>
+</main>
+<div class="container">
+  <footer class="site-foot">
+    <span>© <span data-year>2026</span> Ayush Kumar Singh · Business Analyst &amp; Product Owner</span>
+    <nav aria-label="Footer"><a href="../library.html">Documents</a><a href="https://github.com/ayushsingh0456" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/ayush-singh-914495189/" target="_blank" rel="noopener">LinkedIn</a><a href="mailto:ayushsingh.06533@gmail.com">Email</a></nav>
+  </footer>
+</div>
+<dialog class="lightbox" aria-label="Image viewer">
+  <div class="lb">
+    <div class="lb-head"><b data-lb-title></b><button class="icon-btn" type="button" data-lb-close aria-label="Close"><svg aria-hidden="true"><use href="#i-x"/></svg></button></div>
+    <div class="lb-stage"><img alt=""></div>
+    <div class="lb-nav"><button class="icon-btn" type="button" data-lb-prev aria-label="Previous"><svg aria-hidden="true"><use href="#i-chev-left"/></svg></button><button class="icon-btn" type="button" data-lb-next aria-label="Next"><svg aria-hidden="true"><use href="#i-chev-right"/></svg></button></div>
+  </div>
+</dialog>
+<div class="toast" role="status" aria-live="polite"></div>
+
+<script src="../js/main.js" defer></script>
+</body>
+</html>

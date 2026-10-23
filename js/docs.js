@@ -284,7 +284,7 @@
     var q = document.querySelector("[data-lib-search]");
     if (q) q.addEventListener("input", function () { state.q = q.value.trim().toLowerCase(); apply(); });
     var pm = location.search.match(/[?&]project=(\w+)/);
-    if (pm) { var pb = document.querySelector('[data-lib-filter="project"] [data-value="' + pm[1] + '"]'); if (pb) pb.click(); }
+    if (pm) { var pa = { homecare: "tendwell", commerce: "quartier", restaurant: "brasa" }[pm[1]] || pm[1]; var pb = document.querySelector('[data-lib-filter="project"] [data-value="' + pa + '"]'); if (pb) pb.click(); }
     apply();
   }
 
