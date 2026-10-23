@@ -16,9 +16,9 @@ Portfolio of **Ayush Kumar Singh**, Business Analyst. Live at **https://ayushsin
 
 The document viewer renders Markdown, CSV and OpenAPI files straight from the public case-study repositories, with Mermaid diagrams drawn in the browser:
 
-- [tendwell-care-ops-ba-case-study](https://github.com/ayushsingh0456/tendwell-care-ops-ba-case-study)
-- [quartier-local-commerce-ba-case-study](https://github.com/ayushsingh0456/quartier-local-commerce-ba-case-study)
-- [brasa-restaurant-ordering-ba-case-study](https://github.com/ayushsingh0456/brasa-restaurant-ordering-ba-case-study)
+- [us-home-care-operations-platform](https://github.com/ayushsingh0456/us-home-care-operations-platform)
+- [local-commerce-booking-platform](https://github.com/ayushsingh0456/local-commerce-booking-platform)
+- [multi-branch-restaurant-ordering-pos-platform](https://github.com/ayushsingh0456/multi-branch-restaurant-ordering-pos-platform)
 
 ## Tech
 
@@ -26,4 +26,4 @@ Static HTML, CSS and vanilla JavaScript, hosted on GitHub Pages. No build step i
 
 ## Note on content
 
-Tendwell, Quartier and Brasa are fictional products with synthetic data. Client documents and names stay confidential.
+Project names and data in these case studies are changed or synthetic. Client documents and real names stay confidential.
